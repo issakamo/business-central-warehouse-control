@@ -135,8 +135,22 @@ AL.
 
 ## Development-Only Tooling
 
-`dev/` contains a sample data generator and reset action, kept
-separate from `src/` and clearly labeled as non-shipping. These exist
-to exercise detection logic through the same codeunit paths real
-posting uses, rather than hand-inserting records that would bypass
-business rules entirely.
+`dev/` contains a sample data generator and reset action
+(`WHX Demo Data Mgt`), kept separate from `src/` and clearly labeled
+as non-shipping. These exist to exercise detection logic through the
+same codeunit paths real posting uses (`CreateStockException`/
+`CreateReceivingException`), rather than hand-inserting records that
+would bypass business rules entirely.
+
+An earlier version gated this codeunit behind `#if DEBUG`/`#endif`,
+intending it to be excluded from a release build automatically. This
+doesn't work in AL: unlike C#, `DEBUG` is not a compiler-defined
+symbol — without an explicit `#define`, the condition evaluates false
+unconditionally, and the guarded code silently never compiles at all,
+which is why the dev action initially failed to appear in Business
+Central with no error. The directives were removed; the `dev/` vs.
+`src/` folder separation is the actual (manual) safeguard — before
+producing a real release build, `dev/` is excluded by hand. There is
+no automated release-packaging step in this project that would make a
+`#define`-based exclusion meaningfully more effective than manual
+folder exclusion already is.

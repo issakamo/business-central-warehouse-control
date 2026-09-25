@@ -70,6 +70,6 @@ Requires a local Business Central Docker container. See
 
 ## Status
 
-Actively in development: Project 1 of a 3-project portfolio. Projects
-2 (Purchase-to-Pay) and 3 (Integration Hub) are planned as separate
-extensions building on the same conventions.
+Actively in development — Project 1 of a 3-project portfolio, alongside
+[business-central-purchase-control](https://github.com/issakamo/business-central-purchase-control).
+Project 3 (Integration Hub) has not yet been started.
