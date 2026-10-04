@@ -363,6 +363,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page WHX Inventory Exception Card - Control Status - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3840431306 - Action 2721639112 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resolves the inventory exception.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WHX Inventory Exception Card - Action Resolve - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3840431306 - Action 2721639112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resolve</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WHX Inventory Exception Card - Action Resolve - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3246530604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Inventory Exceptions</source>
           <note from="Developer" annotates="general" priority="2"></note>

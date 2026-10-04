@@ -78,6 +78,7 @@ page 50101 "WHX Inventory Exception Card"
                 }
                 field(Status; Rec.Status)
                 {
+                    Editable = false;
                     Caption = 'Status';
                     Tooltip = 'Specifies the status of the inventory exception.';
                 }
@@ -113,6 +114,28 @@ page 50101 "WHX Inventory Exception Card"
                     Caption = 'Created By';
                     Tooltip = 'Specifies the user who created the inventory exception.';
                 }
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(Resolve)
+            {
+                ApplicationArea = All;
+                Caption = 'Resolve';
+                Image = Approve;
+                ToolTip = 'Resolves the inventory exception.';
+
+                trigger OnAction()
+                var
+                    ExceptionMgt: Codeunit "WHX Exception Management";
+                begin
+                    ExceptionMgt.ResolveException(Rec);
+                    CurrPage.Update(false);
+                end;
             }
         }
     }
