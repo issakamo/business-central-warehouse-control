@@ -39,9 +39,10 @@ codeunit 50101 "WHX Event Subscribers"
             exit;
 
         ExceptionMgt.CreateReceivingException(
-            PurchRcptLine."No.",
-            PurchRcptLine."Location Code",
-            PurchaseLine.Quantity,
-            PurchRcptLine.Quantity);
+    PurchRcptLine."No.",
+    PurchRcptLine."Location Code",
+    PurchRcptLine."Bin Code",
+    PurchaseLine.Quantity,
+    PurchRcptLine.Quantity);
     end;
 }

@@ -30,7 +30,7 @@ codeunit 50100 "WHX Exception Management"
         exit(Exception."Entry No.");
     end;
 
-    procedure CreateReceivingException(ItemNo: Code[20]; LocationCode: Code[10]; OrderedQty: Decimal; ReceivedQty: Decimal): Integer
+    procedure CreateReceivingException(ItemNo: Code[20]; LocationCode: Code[10]; BinCode: Code[20]; OrderedQty: Decimal; ReceivedQty: Decimal): Integer
     var
         Exception: Record "WHX Inventory Exception";
     begin
@@ -40,6 +40,7 @@ codeunit 50100 "WHX Exception Management"
         Exception.Init();
         Exception."Item No." := ItemNo;
         Exception."Location Code" := LocationCode;
+        Exception."Bin Code" := BinCode;
         Exception."Expected Quantity" := OrderedQty;
         Exception."Actual Quantity" := ReceivedQty;
         Exception."Exception Type" := Exception."Exception Type"::"Receiving Discrepancy";

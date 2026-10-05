@@ -14,10 +14,10 @@ codeunit 50102 "WHX Demo Data Mgt"
         ExceptionMgt.CreateStockException('1906-S', 'YELLOW', 'Y-08-0001', 0, 15);      // zero-expected -> High
 
         // Receiving discrepancies
-        ExceptionMgt.CreateReceivingException('1908-S', 'WHITE', 500, 450);      // 10% -> High
-        ExceptionMgt.CreateReceivingException('1908-S', 'WHITE', 100, 98);       // 2% -> Low
-        ExceptionMgt.CreateReceivingException('1920-S', 'YELLOW', 80, 40);         // 50% -> Critical
-        ExceptionMgt.CreateReceivingException('1896-S', 'WHITE', 60, 55);        // ~8.3% -> Medium
+        ExceptionMgt.CreateReceivingException('1908-S', 'WHITE', '', 500, 450);      // 10% -> High
+        ExceptionMgt.CreateReceivingException('1908-S', 'WHITE', '', 100, 98);       // 2% -> Low
+        ExceptionMgt.CreateReceivingException('1920-S', 'YELLOW', '', 80, 40);         // 50% -> Critical
+        ExceptionMgt.CreateReceivingException('1896-S', 'WHITE', '', 60, 55);        // ~8.3% -> Medium
     end;
 
     procedure ClearSampleExceptions()
