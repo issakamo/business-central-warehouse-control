@@ -1,3 +1,5 @@
+▶ **[Watch the demo (6 min)](https://youtu.be/G0yQwuGnR10)**
+
 # Business Central Warehouse Control
 
 Inventory exception detection and management for Dynamics 365 Business Central.
