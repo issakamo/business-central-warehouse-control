@@ -12,6 +12,7 @@ report 50101 "WHX Exception Summary Report"
     {
         dataitem(PriorityBuffer; "WHX Priority Count Buffer")
         {
+            RequestFilterHeading = 'Priority Summary';
             column(Priority_; Priority) { }
             column(PriorityCount; "Count") { }
 
@@ -24,6 +25,7 @@ report 50101 "WHX Exception Summary Report"
         }
         dataitem(ItemBuffer; "WHX Item Count Buffer")
         {
+            RequestFilterHeading = 'Top Affected Items';
             column(ItemNo_; "Item No.") { }
             column(ItemCount; "Count") { }
 

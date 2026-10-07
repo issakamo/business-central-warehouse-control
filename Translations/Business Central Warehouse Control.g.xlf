@@ -493,6 +493,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report WHX Exception Summary Report - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 819212198 - ReportDataItem 406062111 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Top Affected Items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report WHX Exception Summary Report - ReportDataItem ItemBuffer - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 819212198 - ReportDataItem 3460143254 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Priority Summary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report WHX Exception Summary Report - ReportDataItem PriorityBuffer - Property RequestFilterHeading</note>
+        </trans-unit>
         <trans-unit id="Report 3309581096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Inventory Exception Report</source>
           <note from="Developer" annotates="general" priority="2"></note>
