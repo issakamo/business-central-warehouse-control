@@ -70,6 +70,7 @@ Requires a local Business Central Docker container. See
 
 ## Status
 
-Actively in development — Project 1 of a 3-project portfolio, alongside
-[business-central-purchase-control](https://github.com/issakamo/business-central-purchase-control).
-Project 3 (Integration Hub) has not yet been started.
+Complete. Project 1 of a 3-project Business Central portfolio, alongside
+[business-central-purchase-control](https://github.com/issakamo/business-central-purchase-control)
+and
+[business-central-fx-integration](https://github.com/issakamo/business-central-fx-integration).
